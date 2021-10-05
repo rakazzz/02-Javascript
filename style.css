@@ -2,4 +2,9 @@
 
 body {
 font-family: 'Stick No Bills', sans-serif;
+background-color: rgb(80, 79, 80)
+}
+
+.title-color {
+  color: rgb(187, 187, 187);
 }

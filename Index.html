@@ -2,12 +2,6 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <style>
-      body {
-        background: rgb(2,0,36);
-      }
-    </style>
-
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -18,10 +12,10 @@
     <title>Shop List</title>
   </head>
   <body>
-    <h1 class="text-center py-2">Shopping List</h1>
+    <h1 class="text-center py-2 title-color">Shopping List</h1>
     <div class="container">
       <input type="text" id="input-item">
-      <button type="button"  id="btn-add-item" onclick="inputL()">add</button>
+      <button type="button"  id="btn-add-item" onclick="inputL()" class="btn btn-dark">add</button>
       <ul id="list-item">
       </ul>
     </div>
