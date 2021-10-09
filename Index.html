@@ -12,10 +12,18 @@
     <title>Shop List</title>
   </head>
   <body>
-    <h1 class="text-center py-2 title-color">Shopping List</h1>
-    <div class="container">
+    <header>
+      <nav class="navbar navbar-expand-md bg-light">
+        <div class="container p-0">
+          <span class="navbar-brand">Shopping List</span>
+        </div>
+      </nav>
+    </header>
+    <div class="container pt-3">
+      <h3 class="text-light">Input item yang akan dibeli bawah ini</h3>
       <input type="text" id="input-item" class="form-control-lg" placeholder="input...">
-      <button type="button"  id="btn-add-item" onclick="inputL()" class="btn btn-dark">add</button>
+      <button type="button"  id="btn-add-item" onclick="inputL()" class="btn btn-dark btn-lg">add</button>
+      <div class="form-text ">tekan enter untuk submit</div>
       <ul id="list-item">
       </ul>
     </div>

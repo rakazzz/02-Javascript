@@ -1,11 +1,18 @@
 var list = document.getElementById('list-item')
-var btnAdd = document.getElementById('btn-add-item');
+var inputItem = document.getElementById('input-item')
+
+inputItem.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+    event.preventDefault();
+      document.getElementById("btn-add-item").click();
+  }
+})
 
 function inputL(){
   var lit = document.createElement('li');
-  lit.classList.add('pt-3', 'text-light');
-  var inputItem = document.getElementById('input-item')
+  lit.classList.add('pt-3', 'text-light', 'list-fontsize');
   var item = list.getElementsByTagName('li');
+
 
   var btn = document.createElement("button");
   btn.innerHTML = "delete";
@@ -14,7 +21,7 @@ function inputL(){
   }
   btn.classList.add('btn', 'btn-danger')
       if (inputItem.value === '') {
-        alert('tidak boleh kosong')
+        alert('field tidak boleh kosong')
         inputItem.focus();
         return;
       }
